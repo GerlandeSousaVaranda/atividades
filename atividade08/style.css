@@ -1,1 +1,6 @@
-style.css
+#container {
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
