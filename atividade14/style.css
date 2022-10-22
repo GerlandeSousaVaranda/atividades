@@ -25,14 +25,14 @@ body {
 	float: left;
 	background: #EEC900;
 	width: 25%;
-	height: 400px;
+	height: 500px;
 }
 
 #Centro {
 	position: relative;
 	background: #90EE90;
 	width: 50%;
-	height: 400px;
+	height: 500px;
 	float: left;
 }
 
@@ -41,7 +41,7 @@ body {
 	float: right;
 	background: #FFB90F;
 	width: 25%;
-	height: 400px;
+	height: 500px;
 	position: relative;
 } 
 #Footer { 
