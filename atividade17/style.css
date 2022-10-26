@@ -2,13 +2,14 @@
 	width: 1000px;
 	border: 1px solid gray;
 	background: rgba(173,216,230, 1.0);
-	height: 1000px;
+	height: 1050px;
+	float: left;
 }
 
 #container footer{
 	position: relative;
 	color: red;
-	bottom: -110px;
+	bottom: -150px;
 }
 article {
 	position: relative;
