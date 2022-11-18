@@ -11,5 +11,5 @@
 }
 
 .pessoa::after {
-	content: " - Idade: " attr(data-idade) " Anos " " - CPF: " attr(data-cpf);
+	content:  " - Idade: " attr(data-idade) " Anos " " - CPF: " attr(data-cpf);
 }
