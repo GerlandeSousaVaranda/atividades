@@ -1,0 +1,287 @@
+#conteudo {
+	background: url(../imagens/logoehomem.jfif);
+	width: 1100px;
+	height: 1450px;
+}
+
+.logo {
+	margin: 10px;
+}
+
+.pri {
+	position: relative;
+	float: left;
+	color: blue;
+	font-size: 50px;
+	font-family: helvetica;
+	text-shadow: 2px 2px white;
+	top: -30px;
+}
+.seg {
+	position: relative;
+	float: left;
+	color: white;
+	font-size: 50px;
+	font-family: helvetica;
+	text-shadow: 2px 2px blue;
+	top: -30px;
+}
+
+#cabecalho {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 24px;
+	text-decoration: none;
+	width: 1100px;
+	height: 100px;
+	box-sizing: border-box ;
+	padding: 10px;
+	top: 5px;
+	z-index: 10;
+
+}
+.data {
+	position: relative;
+	top: 95px;
+	color: white;
+	margin-left: 10px;
+}
+
+article section{
+	background:url(../imagens/timaocinza.jpg);
+	width: 550px;
+	height: 620px;
+	box-shadow: 10px 10px 10px black;
+	float: left;
+	top: 100px;
+	margin: 15px;
+	position: relative;
+	top: 110px;
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 10px;
+	line-height: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+
+}
+
+.titulo {
+	background: rgba(0, 0, 0, 0.7);
+	text-shadow: 3px 3px 3px purple;
+	text-align: center;
+	box-sizing: border-box;
+	position: relative;
+	top: 5px;
+	font-size: 50px;
+	height: 80px;
+	font-family: helvetica;
+	margin: 10px;
+}
+
+.titulo span {
+	position: relative;
+	top: 25px;
+	color: red;
+	animation: brilho 2s ease-in-out infinite;
+}
+
+article section p {
+	color: black;
+	font-size: 18px;
+}
+ 
+.dia {
+	position: relative;
+	color: red;
+	top: 5px;
+	right: -150px;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+ img {
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	float: left;
+	margin: 10px;
+}
+
+	
+nav a {
+	text-decoration: none;
+	margin: 10px;
+	float: right;
+	text-align: center;
+	position: relative;
+	top: 10px;
+	color: white;
+}
+
+nav a:hover{
+	background: blue;
+}
+
+a:link {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+ 
+
+.login {
+	position: relative;
+	float: right;
+	width: 450px;
+	height: 340px;
+	top: -550px;
+	background: white;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 10px black;
+	float: right;
+	margin: 30px;
+	bottom: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+}
+
+.login input:hover{
+	height: 35px;
+	width: 300px;
+}
+
+.perfil {
+	width: 450px;
+	height: 850px;
+	background: white;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 10px black;
+	float: right;
+	position: relative;
+	margin: 30px;
+	bottom: 550px;
+	border-radius: 10px;
+}
+fieldset {
+	background: gray;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 25px;
+
+}
+.botao {
+	font-size: 20px;
+	margin: 20px;
+}
+
+.botao:hover{
+	background: green;
+	font-size: 30px;
+
+}
+
+fieldset a:hover{
+	background: blue;
+	font-size: 30px;
+}
+fieldset a{
+	text-decoration: none;
+}
+
+
+.rodapesections {
+	color: red;
+	position: relative;
+	float: right;
+	bottom: 10px;
+	padding: 5px;
+}
+
+.rodapesections p {
+	color: red;
+}
+
+#rodapeprincipal {
+	height: 50px;
+	background: black;
+	bottom: -1400px;
+	position: relative;
+	color: white;
+	text-align: center;
+	
+}
+
+
+
+.titulo span:nth-of-type(2){
+	animation-name: 0.25s;
+}
+
+.titulo span:nth-of-type(3){
+	animation-name: 0.50s;
+}
+
+.titulo span:nth-of-type(4){
+	animation-name: 0.75s;
+}
+
+.titulo span:nth-of-type(5){
+	animation-name: 0.100s;
+}
+
+.titulo span:nth-of-type(6){
+	animation-name: 0.125s;
+}
+
+.titulo span:nth-of-type(7){
+	animation-name: 0.150s;
+}
+
+.titulo span:nth-of-type(8){
+	animation-name: 0.175s;
+}
+
+@keyframes brilho{
+
+	0%{
+		color: #fff;
+		text-shadow: 0 0 12px purple;
+		text-shadow: 0 0 50px purple;
+		text-shadow: 0 0 100px purple;
+
+
+	}
+
+	10%, 90%{
+		color: red;
+		text-shadow: none;
+
+	}
+}
+
+.imglateral img{
+	width: 430px;
+	height: 350px;
+}
+
+.perfil p{
+	text-align: justify;
+	padding: 10px;
+}
+
+.perfil .rodapesections p{
+	position: relative;
+	bottom: 50px;
+}
+
+#rodapeprincipal p{
+	position: relative;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+}
+
