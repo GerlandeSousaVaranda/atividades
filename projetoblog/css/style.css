@@ -1,7 +1,7 @@
 #conteudo {
-	background: url(../imagens/logoehomem.jfif);
-	width: 1100px;
-	height: 1450px;
+	background: linear-gradient( to bottom, LightBlue, DarkBlue);
+	width: 1500px;
+	height: 1200px;
 }
 
 .logo {
@@ -32,7 +32,7 @@
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 24px;
 	text-decoration: none;
-	width: 1100px;
+	width: 1500px;
 	height: 100px;
 	box-sizing: border-box ;
 	padding: 10px;
@@ -43,14 +43,14 @@
 .data {
 	position: relative;
 	top: 95px;
-	color: white;
+	color: black;
 	margin-left: 10px;
 }
 
 article section{
 	background:url(../imagens/timaocinza.jpg);
-	width: 550px;
-	height: 620px;
+	width: 900px;
+	height: 490px;
 	box-shadow: 10px 10px 10px black;
 	float: left;
 	top: 100px;
@@ -96,15 +96,15 @@ article section p {
 	position: relative;
 	color: red;
 	top: 5px;
-	right: -150px;
+	right: -450px;
 	padding: 20px;
 	box-sizing: border-box;
 	font-size: 18px;
 }
 
  img {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	border-radius: 20px;
 	float: left;
 	margin: 10px;
@@ -135,9 +135,9 @@ a:link {
 .login {
 	position: relative;
 	float: right;
-	width: 450px;
+	width: 510px;
 	height: 340px;
-	top: -550px;
+	top: -425px;
 	background: white;
 	box-sizing: border-box;
 	box-shadow: 10px 10px 10px black;
@@ -154,15 +154,15 @@ a:link {
 }
 
 .perfil {
-	width: 450px;
-	height: 850px;
+	width: 510px;
+	height: 640px;
 	background: white;
 	box-sizing: border-box;
 	box-shadow: 10px 10px 10px black;
 	float: right;
 	position: relative;
 	margin: 30px;
-	bottom: 550px;
+	bottom: 450px;
 	border-radius: 10px;
 }
 fieldset {
@@ -208,7 +208,7 @@ fieldset a{
 #rodapeprincipal {
 	height: 50px;
 	background: black;
-	bottom: -1400px;
+	bottom: -1150px;
 	position: relative;
 	color: white;
 	text-align: center;
@@ -264,8 +264,8 @@ fieldset a{
 }
 
 .imglateral img{
-	width: 430px;
-	height: 350px;
+	width: 490px;
+	height: 300px;
 }
 
 .perfil p{
@@ -283,5 +283,10 @@ fieldset a{
 	box-sizing: border-box;
 	font-size: 20px;
 	text-align: center;
+}
+
+.perfil .dia {
+	position: relative;
+	right: 10px;
 }
 
