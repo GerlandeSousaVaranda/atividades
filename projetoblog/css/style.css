@@ -79,6 +79,7 @@ article section{
 	height: 80px;
 	font-family: helvetica;
 	margin: 10px;
+	border-radius: 10px;
 }
 
 .titulo span {
@@ -124,6 +125,9 @@ nav a {
 
 nav a:hover{
 	background: blue;
+	color: black;
+	border-radius: 10px;
+	font-size: 30px;
 }
 
 a:link {
@@ -304,3 +308,4 @@ fieldset a{
 #for input{
 	
 }
+
