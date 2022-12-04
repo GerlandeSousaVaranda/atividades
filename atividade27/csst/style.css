@@ -1,5 +1,5 @@
 .perfil {
-	width: 400px;
+	width: 450px;
 	border: solid 1px black;
 }
 .usuario {
@@ -7,19 +7,19 @@
 	height: 300px;
 	position: relative;
 	text-align: center;
-	left: 38px;
+	left: 50px;
 }
 .perfil h1 {
 	position: relative;
 	box-sizing: border-box;
 	text-align: center;
 }
-.perfil h2 {
+.perfil h3 {
 	position: relative;
 	box-sizing: border-box;
 	text-align: center;
 }
-.perfil p {
+.perfil h4 {
 	position: relative;
 	box-sizing: border-box;
 	text-align: center;
@@ -32,8 +32,13 @@
 .l2 {
 	position: relative;
 	box-sizing: border-box;
-	float: right;
+	right: -100px;
 }
+.l1 {
+	position: relative;
+	left: 20px;
+}
+
 .button {
 	position: relative;
 	text-align: center;
