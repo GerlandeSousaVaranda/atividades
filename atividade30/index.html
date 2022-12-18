@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  
 </head>
 <body>
 
@@ -57,9 +57,9 @@
         <div class="col-xs-12 col-sm-7">
 
           
-						<label for="pesquisa">Pesquisar</label>
-						<input type="text" class="form-control" id="pesquisar" placeholder="pesquisar">
-					</div>
+            <label for="pesquisa">Pesquisar</label>
+            <input type="text" class="form-control" id="pesquisar" placeholder="pesquisar">
+          </div>
         
       
 
@@ -80,17 +80,21 @@
     <div class="col-sm-8">
 
 
-    <button type="button" class="dropdown">10 <span>
-    
-      <a class=" dropdown-toggle" href="#" id="Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-      </a></span>
-      <ul class="dropdown-menu" aria-labelledby="Dropdown">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-  
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle"
+         type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          <input type="text">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item active" href="#">Pizza</a></li>
+          <li><a class="dropdown-item" href="#">refrigerante</a></li>
+          <li><a class="dropdown-item" href="#">cajuina</a></li>
+          <li><a class="dropdown-item" href="#">bomba</a></li>
+          <li><a class="dropdown-item" href="#">pasteis</a></li> 
+          <li><a class="dropdown-item" href="#">suco</a></li>
+          
+        </ul>
+      </div>
 
     </button><span>Registros por paginas</span>
     
@@ -99,7 +103,7 @@
     <div class="col-sm-4">
           
     Busca :  <input type="text" class="btn btn-outline-dark">
-					</div>
+          </div>
 
     </div>
   </div>    
@@ -108,21 +112,21 @@
   
 
   <table class="table table-striped table-hover table-condensed mt-3 border">
-		<thead>
-			<tr>
+    <thead>
+      <tr>
         <th>ID</th>
-				<th>Descrição</th>
-				<th>Situação</th>
-				<th>Ações</th>
-			</tr>
-		</thead>
+        <th>Descrição</th>
+        <th>Situação</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
 
-		<tbody>
-			<tr>
+    <tbody>
+      <tr>
         <td>01</td>
-				<td>Pizza</td>
-				<td> <button type="button" class="btn btn-success">Ativo</button></td>
-				<td>
+        <td>Pizza</td>
+        <td> <button type="button" class="btn btn-success">Ativo</button></td>
+        <td>
 
           <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top " title="VER DETALHE " >
           <i class="fa-regular fa-newspaper"></i>
@@ -132,19 +136,40 @@
           <i class="fa-regular fa-pen-to-square"></i>
         </button>
 
-        <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top dark" title="REMOVER " >
-          <i class="fa-solid fa-trash-can"></i>
-        </button>
+        <button type="button"
+        class="btn btn-default"
+         data-bs-placement="Right" title="REMOVER" 
+         data-bs-toggle="modal" 
+         data-bs-target="#staticBackdrop">
+         <i class="fa-solid fa-trash-can"></i>
+       
+       </button>
 
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+ <div class="modal-content">
+   <div class="modal-header">
+     <h5 class="modal-title" id="staticBackdropLabel">deseja realmente remover esse item</h5>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   </div>
+   
+   <div class="modal-footer">
+     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">sim</button>
+     <button type="button" class="btn btn-primary">não</button>
+   </div>
+ </div>
+</div>
+</div>
 
         </td>
-			</tr>
+      </tr>
 
-			<tr>
+      <tr>
         <td>02</td>
-				<td>Refrigerante</td>
-				<td> <button type="button" class="btn btn-success">Ativo</button></td>
-				<td>
+        <td>Refrigerante</td>
+        <td> <button type="button" class="btn btn-success">Ativo</button></td>
+        <td>
           <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top " title="VER DETALHE " >
             <i class="fa-regular fa-newspaper"></i>
           </button>
@@ -153,17 +178,39 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </button>
   
-          <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top dark" title="REMOVER " >
-            <i class="fa-solid fa-trash-can"></i>
-          </button>
-        </td>
-			</tr>
+          <button type="button"
+          class="btn btn-default"
+           data-bs-placement="Right" title="REMOVER" 
+           data-bs-toggle="modal" 
+           data-bs-target="#staticBackdrop">
+           <i class="fa-solid fa-trash-can"></i>
+         
+         </button>
 
-			<tr>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="staticBackdropLabel">deseja realmente remover esse item</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">sim</button>
+       <button type="button" class="btn btn-primary">não</button>
+     </div>
+   </div>
+ </div>
+</div>
+        </td>
+      </tr>
+
+      <tr>
         <td>03</td>
-				<td>Cajuina</td>
-				<td> <button type="button" class="btn btn-default">Inativo</button></td>
-				<td>
+        <td>Cajuina</td>
+        <td> <button type="button" class="btn btn-default">Inativo</button></td>
+        <td>
           <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top " title="VER DETALHE " >
             <i class="fa-regular fa-newspaper"></i>
           </button>
@@ -172,19 +219,41 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </button>
   
-          <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top dark" title="REMOVER " >
-            <i class="fa-solid fa-trash-can"></i>
-          </button>
+          <button type="button"
+          class="btn btn-default"
+           data-bs-placement="Right" title="REMOVER" 
+           data-bs-toggle="modal" 
+           data-bs-target="#staticBackdrop">
+           <i class="fa-solid fa-trash-can"></i>
+         
+         </button>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="staticBackdropLabel">deseja realmente remover esse item</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">sim</button>
+       <button type="button" class="btn btn-primary">não</button>
+     </div>
+   </div>
+ </div>
+</div>
         </td>
-			</tr>
+      </tr>
 
       <tr>
         <td>04</td>
-				<td>Bomba</td>
-				<td> <button type="button" class="btn btn-success">Ativo</button></td>
+        <td>Bomba</td>
+        <td> <button type="button" class="btn btn-success">Ativo</button></td>
 
 
-				<td>
+        <td>
           <button type="button" class="btn btn-default" data-bs-toggle="tooltip" data-bs-placement="top " title="VER DETALHE " >
             <i class="fa-regular fa-newspaper"></i>
           </button>
@@ -193,23 +262,49 @@
             <i class="fa-regular fa-pen-to-square"></i>
           </button>
 
+
           <button type="button"
-           class="btn btn-default" 
-           data-bs-toggle="tooltip"
-            data-bs-placement="top" title="REMOVER">
+           class="btn btn-default"
+            data-bs-placement="Right" title="REMOVER" 
+            data-bs-toggle="modal" 
+            data-bs-target="#staticBackdrop">
             <i class="fa-solid fa-trash-can"></i>
-            </button>
+          
+          </button>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+ data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">deseja realmente remover esse item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">sim</button>
+        <button type="button" class="btn btn-primary">não</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
         </td>
 
-			</tr>
+      </tr>
 
-		</tbody>
-	
+    </tbody>
+  
 </table>
 
   </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+   integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+   <script src="bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
   
 </body>
 
